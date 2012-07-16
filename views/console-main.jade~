@@ -1,0 +1,10 @@
+.left
+	.titles
+		ul			
+			- each application in applications				
+				li
+					a(href="/applist/"+application._id.toHexString())!= application.firstname
+
+.divider
+						
+

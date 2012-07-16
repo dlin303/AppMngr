@@ -1,0 +1,8 @@
+h1= title
+#applications
+    - each application in applications
+      div.application
+        div.created_at= application.created_at
+        div.title
+           a(href="/applist/"+application._id.toHexString())!= application.firstname
+        div.body= application.lastname

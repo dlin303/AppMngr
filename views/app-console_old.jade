@@ -1,0 +1,20 @@
+.left
+	.titles
+		ul#application-list			
+			- for (var d in applications)
+				li#application-row-template																							
+						a(id="application-title-" + applications[d].id, href="/documents/" + applications[d].id)
+							= applications[d].title
+
+.divider
+						
+.display
+	#display-content
+		.info-title
+			input.info-title (name='d[title]')
+		.info-name			
+			input.info-name(name='d[name]')										
+		textarea#editor(name='d[data]')
+
+#footer
+	a#delete(href='#') Delete Selected

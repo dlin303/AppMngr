@@ -1,0 +1,31 @@
+!!!
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/Aristo/Aristo.css')
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js')
+		
+	body
+		.container
+			#header
+				ul
+					li
+						#main-h1
+							a(href='/documents') AppMngr v0.1 pre-Beta
+					-   if (typeof currentUser !== 'undefined')
+						li.right
+							a#logout(href='/sessions', class='destroy') Logout
+						#welcome
+							- for (var d in applications)
+								- if (d==0)
+									label Welcome
+									a(id=applications[0].user, href='#')=applications[0].user
+						li.right
+							a#settings(href='/users/update') Account Settings
+								
+							
+		!= body
+	script(type='text/javascript', src='/javascripts/applications.js')
+	script(type='text/javascript', src='/javascripts/users.js')

@@ -1,0 +1,12 @@
+.page
+	.register
+		.box
+			h2 Update Profile
+			.register-credentials
+				form.users(action='/documents')
+					!=partial('userupdatefields', { locals: { user: user } })
+					div.register-button
+						input#update(type="submit", value="Update")
+						span \ or 
+							a(href='/documents') Cancel
+

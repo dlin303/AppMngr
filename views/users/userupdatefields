@@ -1,0 +1,17 @@
+div#update-firstname
+	label First Name
+	input(name='user[firstname]', value=user.firstname || '')
+div#update-lastname
+	label Last Name
+	input(name='user[lastname]', value = user.lastname || '')
+div#update-username
+	label Username
+	input(name='user[username]', value = user.username || '')
+div#update-email
+	label Email:
+	input(name='user[email]', value=user.email || '')
+div#update-password
+	label Password:
+	input(name='user[password]', value=user.password || '', type='password')
+
+

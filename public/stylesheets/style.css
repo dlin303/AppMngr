@@ -1,0 +1,394 @@
+body {
+  font-family: "Helvetica Neue", "Lucida Grande", "Arial";
+  font-size: 13px;
+  text-align: center;
+  text-stroke: 1px rgba(255,255,255,0.1);
+  color: #555;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+h1,
+h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #343434;
+}
+h1 {
+  text-shadow: 1px 2px 2px #ddd;
+  font-size: 60px;
+}
+h3 {
+  text-shadow: 1px 2px 2px #ddd;
+  font-size: 1.3em;
+}
+#folders h1 {
+  text-shadow: 1px 2px 2px #ddd;
+  font-size: 1.3em;
+}
+.form-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  width: 960px;
+  height: auto;
+  text-align: left;
+}
+.form-box -moz-box-shadow 3px3px5px6px#ccc {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.form-box h1 {
+  text-align: center;
+}
+.content {
+  margin: 30px 50px 10px 50px;
+  height: 100px;
+}
+.content h3 {
+  text-align: center;
+}
+.content input[type =text] {
+  float: right;
+}
+.description {
+  margin: 10px;
+  float: center;
+  text-align: center;
+}
+.name {
+  float: left;
+  text-align: left;
+  font-size: 1em;
+}
+.name span {
+  margin-top: 1px;
+}
+.contact {
+  float: right;
+  text-align: left;
+  font-size: 1em;
+}
+.form-footer {
+  margin: 50px;
+  text-align: center;
+}
+.form-footer #editArticleSubmit input[type =submit] {
+  text-align: center;
+}
+.container {
+  width: 100%;
+}
+#header {
+  width: 100%;
+  height: 35px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6 url("/images/the_gradient.gif") repeat-x 50% 50%;
+  border-bottom: 1px solid #999;
+}
+#header ul {
+  list-style-type: none;
+}
+#header #main-h1 a {
+  font-size: 18px;
+}
+#main-h1 {
+  padding: 6px;
+}
+#header ul li {
+  float: left;
+}
+#header ul li.right {
+  float: right;
+}
+#header a {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+div,
+form {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  position: absolute;
+  background-color: #dfe3ea;
+  width: 250px;
+  overflow: auto;
+}
+#display-comments {
+  background-color: #dfe3ea;
+  width: 245px;
+  overflow: auto;
+  margin: 5px;
+  border: 1px solid #999;
+}
+#comments {
+  clear: right;
+  float: left;
+  width: 250px;
+  height: 250px;
+}
+#horiz-comments {
+  float: left;
+  margin-left: 251px;
+  background-color: #dfe3ea;
+}
+.divider {
+  position: absolute;
+  left: 250px;
+  background-color: #999;
+  width: 2px;
+  cursor: e-resize;
+  cursor: col-resize;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+.divider-right {
+  position: absolute;
+  right: 250px;
+  background-color: #999;
+  width: 2px;
+  cursor: e-resize;
+  cursor: col-resize;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+.titles {
+  font-size: 0.8em;
+}
+.left ul a {
+  color: #000;
+  display: block;
+  font-size: 13px;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+.display {
+  margin-left: 251px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  float: left;
+}
+.display-header {
+  text-align: center;
+}
+#display-content {
+  text-align: left;
+}
+.page {
+  background-color: #fff;
+  text-align: center;
+  height: 700px;
+  width: 100%;
+}
+.login-box {
+  width: 400px;
+  height: 150px;
+  margin-left: 37%;
+  padding-top: 100px;
+}
+#sign-in {
+  width: 400px;
+  height: 185px;
+  margin-top: 50px;
+  background-color: #dfe3ea;
+  border: 1px solid #999;
+  -moz-box-shadow: 0px 2px 5px #888;
+  -webkit-box-shadow: 0px 2px 5px #888;
+  box-shadow: 0px 2px 5px #888;
+}
+.credentials {
+  text-align: right;
+  padding: 17px 80px 17px 0px;
+}
+.left ul .selected {
+  font-weight: bold;
+  color: #fff;
+  background-color: #8897ba;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b2bed7), to(#8897ba));
+  background: -moz-linear-gradient(top, #b2bed7, #8897ba);
+}
+.left ul li.selected a {
+  color: #fff;
+  font-weight: bold;
+}
+.unread a {
+  color: #fff;
+  font-weight: bold;
+}
+.unread {
+  font-weight: bold;
+  color: #fff;
+  background-color: #8897ba;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f75d59), to(#c11b17));
+  background: -moz-linear-gradient(top, #f75d59, #c11b17);
+}
+#editor,
+#editor-container input.title {
+  border: none;
+  outline: none;
+  font-size: 108%;
+  float: right;
+  clear: both;
+  border-bottom: 1px solid #999;
+  margin: 0;
+  width: 100%;
+  padding: 5px 0;
+  readonly: readonly;
+}
+textarea#editor {
+  border: none;
+  readonly: readonly;
+}
+input.info-title,
+input.info-name,
+input.info-date {
+  border: none;
+  outline: none;
+  font-size: 108%;
+  float: left;
+  clear: both;
+  border-bottom: 1px solid #999;
+  margin-left: 5px;
+  width: 100%;
+  padding: 5px 0;
+}
+#footer {
+  width: 100%;
+  height: 35px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6 url("/images/the_gradient.gif") repeat-x 50% 50%;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  clear: both;
+  position: absolute;
+}
+#footer a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+#delete {
+  float: left;
+  padding: 9px 9px 10px 9px;
+  border-right: 1px solid #999;
+}
+#accept,
+#reject,
+#maybe-button {
+  padding: 9px 9px 10px 9px;
+  border-right: 1px solid #999;
+}
+#accept {
+  border-left: 1px solid #999;
+}
+#toolbar {
+  float: left;
+  padding-top: 10px;
+}
+#logout,
+#settings {
+  float: right;
+  padding: 9px 9px 10px 9px;
+  border-left: 1px solid #999;
+}
+.app {
+  background-color: #f6f6f6;
+  width: 300px;
+  height: 60%;
+  margin: auto;
+  padding: auto;
+}
+.right-console {
+  float: right;
+}
+.folder-title {
+  font-weight: bold;
+  background-color: #999;
+}
+#accepted,
+#rejected,
+#maybe {
+  padding: 7px 10px;
+}
+.open {
+  display: block;
+}
+.hide {
+  display: none;
+}
+#welcome {
+  float: left;
+  margin-left: 28%;
+  padding-top: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+#welcome label {
+  font-size: 20px;
+}
+font-weight bold {
+  text-decoration: none;
+  color: #333;
+}
+#welcome a {
+  padding-left: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.register {
+  padding-top: 25px;
+}
+.register-credentials {
+  text-align: right;
+  padding: 10px 23px 0px 0px;
+}
+.register-button {
+  text-align: right;
+  padding: 5px 40px 0 0;
+}
+.box {
+  width: 350px;
+  height: 200px;
+  padding-top: 25px;
+  border: 1px solid #999;
+  margin-left: 35%;
+}
+#sign-in-header {
+  width: 100%;
+  height: 35px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6 url("/images/the_gradient.gif") repeat-x 50% 50%;
+  border-bottom: 1px solid #999;
+}
+#sign-in-header h2 {
+  padding-top: 5px;
+}
+#sign-in-header p {
+  padding-top: 15px;
+}

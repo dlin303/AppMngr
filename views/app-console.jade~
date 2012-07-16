@@ -1,0 +1,86 @@
+.left
+	.titles
+		ul#application-list		
+			- for (var d in applications)		
+				- if (applications[d].read == true && applications[d].accept == false && applications[d].reject == false && applications[d].maybe == false)					
+					li#application-row-template																							
+						a(id="application-title-" + applications[d].id, href="/documents/" + applications[d].id)
+							= applications[d].title
+				- else if(applications[d].read == false)
+					li#application-row-template
+						.unread					
+							a(id="application-title-" + applications[d].id, href="/documents/" + applications[d].id)
+								= applications[d].title
+		
+			li#accepted
+				a.folder-title(href='#') ACCEPTED				
+				ul#accepted-list
+					- for (var d in applications)
+						- if (applications[d].accept == true)
+							li#application-row-template																							
+								a(id="application-title-" + applications[d].id, href="/documents/" + applications[d].id)
+									= applications[d].title
+			li#rejected
+				a.folder-title(href='#') REJECTED
+				ul#rejected-list
+					- for (var d in applications)
+						- if  (applications[d].reject == true)
+							li#application-row-template
+								a(id="application-title-" + applications[d].id, href="/documents/" + applications[d].id)
+									= applications[d].title
+								
+			li#maybe
+				a.folder-title(href='#') MAYBE...
+				ul#maybe-list
+					- for (var d in applications)
+						- if (applications[d].maybe == true)
+							li#application-row-template
+								a(id="application-title-" + applications[d].id, href="/documents/" + applications[d].id)
+									= applications[d].title
+									
+
+	.actions
+		form
+			br
+			label Accept		
+			input(type="radio", id="one", name="filter", value="d.accept", checked)
+			br			
+			label Reject
+			input(type="radio", id="two", name="filter", value="d.reject")
+			br
+			label Maybe
+			input(type="radio", id="three", name="filter", value="d.maybe")
+			div
+				input#filter(type="submit", value="save") Move
+.divider
+						
+.display
+	#display-content
+		.info-title
+			input.info-title (name='d[title]')
+		.info-name			
+			input.info-name(name='d[name]')
+		.info-date
+			input.info-date(name='d[date]')										
+		textarea#editor(name='d[data]', readonly="readonly")
+
+.right-console
+	h1(style="font-size:1em;") Comments
+	textarea#display-comments(name='d[comments]', value = d.comments, readonly="readonly");	
+
+	#comments
+		p Write Comments
+		form	
+			div
+				textarea.info-comments(name='d[info-comments]')
+			div
+				input#save-comment(type="submit", value="save")
+
+#footer
+	a#delete(href='#') Delete Selected
+	#toolbar
+		a#accept(href='#') Accept
+		a#reject(href='#') Reject
+		a#maybe(href='#') Maybe
+		a#welcome(href='/documents')=applications[0].user
+	

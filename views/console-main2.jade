@@ -1,0 +1,18 @@
+.left
+	.titles
+		ul			
+			- each application in applications				
+				li
+					a(href="/console/"+application._id.toHexString())!= application.firstname
+
+.divider
+						
+.display
+	.display-header		
+		div.title= application.firstname
+		div.created_at= application.created_at
+	.display-content		
+		div.body= application.description
+		div.contact_info= application.phone
+		div.contact_info= application.email
+

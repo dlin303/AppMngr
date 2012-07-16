@@ -1,0 +1,7 @@
+h2='NNIIGG'
+  a.button(href='/documents/' + d.id + '/edit') Edit
+p
+  POOPSTER
+  a.button(href='/documents')
+    &larr; All Documents
+p=d.data
