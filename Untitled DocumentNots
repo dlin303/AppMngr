@@ -1,0 +1,5 @@
+Created filters for folders
+Problems: 
+-when application is clicked, it still toggles the show/hide function
+-folder titles are treated as applications. Returns undefined titles, etc.
+		
